@@ -1,15 +1,16 @@
 **@AfterThrowing Advice - Interaction**
 
-<img src="inkdrop://file:Q4mDQwaJY" width=5/>
 
+<img src="https://user-images.githubusercontent.com/80107049/189733734-d1499304-a6c4-469c-8384-80fe8b396cff.png" width=500 />
 
-<img src="inkdrop://file:KlNwnGuTV" width=500 />
+<img src="https://user-images.githubusercontent.com/80107049/189733882-f9ce898e-cac2-4f05-8e9a-5bbeea8b84a2.png" width=500 />
 
 
 
 **Sequence Diagram**
 
-<img src="inkdrop://file:deM53xuUD" width=500 />
+<img src="https://user-images.githubusercontent.com/80107049/189734027-ed550f62-b69a-470a-be9b-17d2d851c4e8.png" width=500 />
+
 
 
 **Use Cases**
@@ -23,7 +24,7 @@
 
 + Create an advice that will run after an exception is thrown
 
-<img src="inkdrop://file:UZkcC9Lo9" width=500 />
+<img src="https://user-images.githubusercontent.com/80107049/189734086-d61057a6-afa9-4ae1-8157-00af9d70fade.png" width=500 />
 
 
 

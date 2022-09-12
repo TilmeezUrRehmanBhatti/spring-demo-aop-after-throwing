@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.util.List;
 
-public class AfterReturningDemoApp {
+public class AfterThrowingDemoApp {
 
     public static void main(String[] args) {
 
@@ -17,10 +17,19 @@ public class AfterReturningDemoApp {
         AccountDAO theAccountDAO = context.getBean("accountDAO", AccountDAO.class);
 
         // call method to find the accounts
-        List<Account> theAccounts = theAccountDAO.findAccounts(false);
+        List<Account> theAccounts = null;
+
+        try {
+            // add a boolean flag to simulate exceptions
+            boolean tripWire = true;
+            theAccounts = theAccountDAO.findAccounts(tripWire);
+
+        } catch (Exception e) {
+            System.out.println("\n\nMain Program ... caught exception: " + e);
+        }
 
         // display the accounts
-        System.out.println("\n\nMain program: AfterReturningDemoApp");
+        System.out.println("\n\nMain program: AfterThrowingDemoApp");
         System.out.println("---");
 
         System.out.println(theAccounts);
